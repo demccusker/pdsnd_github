@@ -166,7 +166,7 @@ def trip_duration_stats(df):
 
 
 def time_converter(time_in_sec):
-    #takes a length of time in seconds and converts it into a time in years, days, hours, minutes, and seconds
+    """takes a length of time in seconds and converts it into a time in years, days, hours, minutes, and seconds"""
     time_counter = time_in_sec 
     years = 0
     days = 0
@@ -222,7 +222,7 @@ def user_stats(df):
     print('-'*40)
 
 def call_rows(df): 
-    #Allows the user to view the raw data, five rows at a time
+    """Allows the user to view the raw data, five rows at a time"""
    
     answer = input('Would you like to view 5 rows of the data?')
     index_start = 0
