@@ -173,6 +173,10 @@ def time_converter(time_in_sec):
     hours = 0
     minutes = 0
     seconds = 0
+    # Determine if the number of seconds is greater than the total in one year; 
+    # if so, find out how many years' worth of seconds there are and assign that 
+    # value to the years variable. Then, deduct the number of seconda already 
+    # accounted for by years and repeat for months, days, and hours
     if time_counter >= (365 * 24 * 60 * 60):
         years = int(time_counter / (365 * 24 * 60 * 60))
         time_counter = time_counter - (years * (365 * 24 * 60 * 60))
