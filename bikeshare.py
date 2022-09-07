@@ -225,7 +225,7 @@ def user_stats(df):
 def call_rows(df): 
     """Allows the user to view the raw data, five rows at a time"""
    
-    answer = input('Would you like to view 5 rows of the data?')
+    answer = input('Would you like to view 5 rows of the data?').lower()
     index_start = 0
     index_stop = 5
     while answer == 'yes':
