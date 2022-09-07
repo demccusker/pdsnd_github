@@ -18,25 +18,22 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     
-    city = input('What city would you like to explore? We can look at New York City, Chicago, or Washington. \n')
-    city = city.lower()
+    city = input('What city would you like to explore? We can look at New York City, Chicago, or Washington. \n').lower()
     while city not in ['chicago', 'new york city', 'washington']:
-        print('Please input either New York City, Chicago, or Washington. \n')
-        city = input().lower()
+        city = input('Please input either New York City, Chicago, or Washington. \n').lower()
 
     # get user input for month (all, january, february, ... , june)
-    month = input('What month would you like to focus on? You can put "all" if you want to see every month. Please note that I only have data from January to June. \n')
-    month = month.lower()
+    month = input('What month would you like to focus on? You can put "all" if you want to see every month. Please note that I only have data from January to June. \n').lower()
+    
     while month not in ['january', 'february', 'march', 'april', 'may', 'june', 'all']:
-        print('Please put in a valid month or "all" to see every month. \n')
-        month = input().lower()
+        month = input('Please put in a valid month or "all" to see every month. \n').lower()
         
     # get user input for day of week (all, monday, tuesday, ... sunday)
-    day = input('What day of the week would you like to focus on? You can put "all" if you want to see each day. \n')
-    day = day.lower()
+    day = input('What day of the week would you like to focus on? You can put "all" if you want to see each day. \n').lower()
+    
     while day not in ['monday', 'tuesday', 'wednesday', 'thrusday', 'friday', 'saturday', 'sunday', 'all']:
-        print('Please put in a valid day of the week or "all" to see each day. \n')
-        day = input().lower()
+        
+        day = input('Please put in a valid day of the week or "all" to see each day. \n').lower()
     print('-'*40)
     
     return city, month, day
